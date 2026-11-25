@@ -538,8 +538,22 @@ enum StructuredContentProbe {
             }
             return nil
 
+        case .native(_, _, let fallback):
+            return first(in: fallback, where: predicate)
+
+        case .definitions(let definitions):
+            for definition in definitions {
+                if let match = first(in: definition.description, where: predicate) {
+                    return match
+                }
+            }
+            return nil
+
         case .paragraph,
-             .code:
+             .code,
+             .heading,
+             .image,
+             .listing:
             return nil
         }
     }

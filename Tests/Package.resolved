@@ -1,5 +1,5 @@
 {
-  "originHash" : "fbc899b41e0d06b318a8856485a80dbc841e3336f1498ef86301918d7604f29b",
+  "originHash" : "17b46273cf32219a51216723252269fa05d22888ed9c1589a4cb567db3b07758",
   "pins" : [
     {
       "identity" : "atomos",
@@ -16,7 +16,7 @@
       "location" : "https://github.com/swift-dsl/DSL.git",
       "state" : {
         "branch" : "master",
-        "revision" : "92957f2f62db2627638574ae5eaa055e7b1c4f73"
+        "revision" : "d6c5c62eef57fed529d68fb970ef38e226ba0f64"
       }
     },
     {
@@ -25,7 +25,7 @@
       "location" : "https://github.com/swift-lco/Primitives.git",
       "state" : {
         "branch" : "master",
-        "revision" : "1e9c7defa2037e0b74be9e95d8e987442323d372"
+        "revision" : "05431e58c105831a155d4a3759309ff1e1e30a88"
       }
     },
     {
@@ -34,7 +34,7 @@
       "location" : "https://github.com/swift-tooling/Testing.git",
       "state" : {
         "branch" : "master",
-        "revision" : "abe024a50cfbe3ebab5e538e023d30616a35d3a2"
+        "revision" : "46974bc10780857c246586f5eca4a73dd5c21f4d"
       }
     }
   ],

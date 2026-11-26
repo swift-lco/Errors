@@ -516,7 +516,8 @@ enum StructuredContentProbe {
             }
             return nil
 
-        case .quote(let content):
+        case .quote(let content, _),
+             .figure(_, let content, _):
             return first(in: content, where: predicate)
 
         case .list(_, let items):
@@ -553,7 +554,9 @@ enum StructuredContentProbe {
              .code,
              .heading,
              .image,
-             .listing:
+             .listing,
+             .verse,
+             .rule:
             return nil
         }
     }

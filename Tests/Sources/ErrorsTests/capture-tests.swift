@@ -542,6 +542,14 @@ enum StructuredContentProbe {
         case .native(_, _, let fallback):
             return first(in: fallback, where: predicate)
 
+        case .notes(let notes):
+            for note in notes {
+                if let match = first(in: note.content, where: predicate) {
+                    return match
+                }
+            }
+            return nil
+
         case .definitions(let definitions):
             for definition in definitions {
                 if let match = first(in: definition.description, where: predicate) {
